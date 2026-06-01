@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: det_postgres
+    environment:
+      POSTGRES_USER: det_user
+      POSTGRES_PASSWORD: det_password
+      POSTGRES_DB: det_system
+    ports:
+      - "5432:5432"
+    volumes:
+      - det_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  det_postgres_data:
