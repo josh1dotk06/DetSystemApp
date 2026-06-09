@@ -1,4 +1,4 @@
-//instructions for PostgreSQL
+
 
 CREATE TABLE IF NOT EXISTS users (
     id SERIAL PRIMARY KEY,
